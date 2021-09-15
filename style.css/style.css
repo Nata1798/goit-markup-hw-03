@@ -22,6 +22,9 @@ ul {
     margin-bottom: 0;
     padding-left: 0;
 }
+.img {
+    display: block;
+}
 .container {
     width: 1200px;
     padding-right: 15px;
@@ -89,7 +92,7 @@ ul {
     letter-spacing: 0.02em;
     color: #757575; 
 }
-.header-contacts-list {
+.header-contacts-list:not(:first-child) {
     margin-left: 50px; 
 }
 .header-tel {
@@ -180,9 +183,6 @@ ul {
 }
 .main-section-second-work{
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-top: 50px;
 }
 .work-item {
     width: 370px;
@@ -198,9 +198,6 @@ ul {
     color: #212121; 
     text-align: center;
     margin: 0px 0px 50px 0px;
-}
-.image-of-work {
-    display: block;
 }
                     /*Our team*/
 .main-section-third-team {
@@ -292,9 +289,12 @@ ul {
     border-bottom-style: solid;
     border-bottom-color: #ececec;
 }
+.portfolio-main-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 .portfolio-list-text {
     display: flex;
-    flex-direction: row;
     text-align: center;
     justify-content: center;
     font-weight: 500;
@@ -302,7 +302,7 @@ ul {
     line-height: 1.6px;
     letter-spacing: 0.003em;
     color: #212121;
-    padding: 95px 0px 35px 0px;
+    margin-bottom: 50px;
 }
 .portfolio-item:not(:last-child) {
     margin-right: 10px;
@@ -329,20 +329,27 @@ ul {
                     /*Example of woks*/
 .portfolio-project {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap-reverse;
-    padding-bottom: 70px;
+    flex-wrap: wrap;
 }
 .portfolio-list {
-    border-width: 1px;
-    border-style: solid;
-    border-color: #eeeeee;
     width: 370px;
-    height: 400px;
     margin-bottom: 25px;
+    margin-right: 30px;
 }
-.portfolio-list:not(:last-child) {
-    margin-right: 25px;
+.portfolio-list.portfolio-list:nth-child(3n) {
+    margin-right: 0px;
+}
+.portfolio-image-comment {
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-right-color: #eeeeee;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #eeeeee;
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-left-color: #eeeeee;
+    padding: 10px 10px 10px 10px;
 }
 .image-name {
     font-weight: bold;
@@ -350,8 +357,7 @@ ul {
     line-height: 2px;
     letter-spacing: 0,06em;
     color: #212121;
-    padding: 10px 10px 10px 10px;
-    margin: 20px 25px 5px 25px;
+    margin-bottom: 10px;
 }
 .image-text {
     font-weight: normal;
@@ -359,8 +365,7 @@ ul {
     line-height: 1,8px;
     letter-spacing: 0.03em;
     color: #757575;
-    padding: 10px 10px 10px 10px;
-    margin: 0px 25px 20px 25px;
+
 }
 .portfolio {
     color: #2196f3;
