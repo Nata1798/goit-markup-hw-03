@@ -22,7 +22,7 @@ ul {
     margin-bottom: 0;
     padding-left: 0;
 }
-.img {
+img {
     display: block;
 }
 .container {
@@ -351,13 +351,13 @@ ul {
     border-left-width: 1px;
     border-left-style: solid;
     border-left-color: #eeeeee;
-    padding: 20px 54px 20px 54px;
+    padding: 20px 24px 20px 24px;
 }
 .image-name {
     font-weight: bold;
     font-size: 18px;
     line-height: 2;
-    letter-spacing: 0,06em;
+    letter-spacing: 0.06em;
     color: #212121;
     margin-bottom: 4px;
 }
